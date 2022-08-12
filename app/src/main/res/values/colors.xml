@@ -10,4 +10,6 @@
     <color name="gray400">#BDBDBD</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="orange">#F4511E</color>
 </resources>

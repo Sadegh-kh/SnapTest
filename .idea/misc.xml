@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Job/android/SnapTest/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Job/android/git/SnapTest/app/src/main/res/drawable/ic_point.xml" value="0.1195" />
+        <entry key="..\:/Job/android/git/SnapTest/app/src/main/res/drawable/shape_news_text.xml" value="0.1195" />
         <entry key="..\:/Job/android/git/SnapTest/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Job/android/git/SnapTest/app/src/main/res/layout/fragment_home.xml" value="0.264" />
       </map>
     </option>
   </component>

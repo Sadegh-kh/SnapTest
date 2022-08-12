@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img_truck"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_store"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_pickup_truck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="وانت"
+        app:layout_constraintEnd_toEndOf="@+id/img_truck"
+        app:layout_constraintStart_toStartOf="@+id/img_truck"
+        app:layout_constraintTop_toBottomOf="@+id/img_truck" />
+
+    <ImageView
+        android:id="@+id/img_store"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_phramacy"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_truck"
+        app:layout_constraintTop_toTopOf="@+id/img_truck"
+        app:srcCompat="@drawable/img_store" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="فروشگاه"
+        app:layout_constraintEnd_toEndOf="@+id/img_store"
+        app:layout_constraintStart_toStartOf="@+id/img_store"
+        app:layout_constraintTop_toBottomOf="@+id/img_store" />
+
+    <ImageView
+        android:id="@+id/img_phramacy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_trip_ticket"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_store"
+        app:layout_constraintTop_toTopOf="@+id/img_store"
+        app:srcCompat="@drawable/img_phramacy" />
+
+    <ImageView
+        android:id="@+id/img_trip_ticket"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_phramacy"
+        app:layout_constraintTop_toTopOf="@+id/img_phramacy"
+        app:srcCompat="@drawable/img_trip_ticket" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="52dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="4dp"
+        android:text="داروخانه"
+        app:layout_constraintEnd_toEndOf="@+id/img_phramacy"
+        app:layout_constraintStart_toStartOf="@+id/img_phramacy"
+        app:layout_constraintTop_toBottomOf="@+id/img_phramacy" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="بلیت سفر"
+        app:layout_constraintEnd_toEndOf="@+id/img_trip_ticket"
+        app:layout_constraintStart_toStartOf="@+id/img_trip_ticket"
+        app:layout_constraintTop_toBottomOf="@+id/img_trip_ticket" />
+
+    <ImageButton
+        android:id="@+id/imageView5"
+        android:layout_width="25dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/shape_point"
+        app:layout_constraintEnd_toEndOf="@+id/img_trip_ticket"
+        app:layout_constraintTop_toTopOf="@+id/img_trip_ticket"
+        app:srcCompat="@drawable/ic_point" />
+
+    <ImageView
+        android:id="@+id/img_driver_register"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/img_truck"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/img_driver_register" />
+
+    <ImageView
+        android:id="@+id/img_relocation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@+id/img_store"
+        app:layout_constraintTop_toTopOf="@+id/img_driver_register"
+        app:srcCompat="@drawable/img_relocation" />
+
+    <ImageView
+        android:id="@+id/img_doctor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@+id/img_phramacy"
+        app:layout_constraintTop_toTopOf="@+id/img_relocation"
+        app:srcCompat="@drawable/img_doctor" />
+
+    <ImageView
+        android:id="@+id/img_hotel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@+id/img_trip_ticket"
+        app:layout_constraintTop_toTopOf="@+id/img_doctor"
+        app:srcCompat="@drawable/img_hotel" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="ثبت نام رانندگان"
+        app:layout_constraintEnd_toEndOf="@+id/img_driver_register"
+        app:layout_constraintStart_toStartOf="@+id/img_driver_register"
+        app:layout_constraintTop_toBottomOf="@+id/img_driver_register" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="40dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/shape_text_news"
+        android:gravity="center"
+        android:text="جایزه"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_driver_register"
+        app:layout_constraintStart_toStartOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="اسباب کشی"
+        app:layout_constraintEnd_toEndOf="@+id/img_relocation"
+        app:layout_constraintStart_toStartOf="@+id/img_relocation"
+        app:layout_constraintTop_toBottomOf="@+id/img_relocation" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="پزشک و مشاور"
+        app:layout_constraintEnd_toEndOf="@+id/img_doctor"
+        app:layout_constraintStart_toStartOf="@+id/img_doctor"
+        app:layout_constraintTop_toBottomOf="@+id/img_doctor" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="هتل"
+        app:layout_constraintEnd_toEndOf="@+id/img_hotel"
+        app:layout_constraintStart_toStartOf="@+id/img_hotel"
+        app:layout_constraintTop_toBottomOf="@+id/img_hotel" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="46dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/shape_text_news"
+        android:gravity="center"
+        android:text="به‌صرفه"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_doctor"
+        app:layout_constraintStart_toStartOf="@+id/textView8" />
+
+    <ImageView
+        android:id="@+id/img_box_office"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/img_hotel"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:srcCompat="@drawable/img_box_office" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="گیشه"
+        app:layout_constraintEnd_toEndOf="@+id/img_box_office"
+        app:layout_constraintStart_toStartOf="@+id/img_box_office"
+        app:layout_constraintTop_toBottomOf="@+id/img_box_office" />
+</androidx.constraintlayout.widget.ConstraintLayout>
