@@ -38,44 +38,5 @@
         app:layout_constraintTop_toTopOf="@+id/img_profile"
         android:src="@drawable/ic_card" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.cardview.widget.CardView
-            android:layout_margin="6dp"
-            android:layout_width="250dp"
-            android:layout_height="200dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="4dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/view_pagerMain"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <com.rd.PageIndicatorView
-                android:id="@+id/pageIndicatorView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:piv_animationType="thinWorm"
-                app:piv_interactiveAnimation="true"
-                android:padding="12dp"
-                app:piv_radius="6dp"
-                app:piv_viewPager="@id/view_pagerMain"
-                app:piv_dynamicCount="true"
-                android:layout_gravity="bottom"/>
-        </androidx.cardview.widget.CardView>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
