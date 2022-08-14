@@ -18,32 +18,41 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        initUi()
 
+    }
+
+    private fun initUi() {
+        initActionBar()
+
+    }
+
+    private fun initActionBar() {
         binding.viewPagerActivityMain.adapter=ViewpagerFragmentsAdapter(this)
         binding.viewPagerActivityMain.offscreenPageLimit=1
+        binding.viewPagerActivityMain.isUserInputEnabled=false
 
         val tapMediator= TabLayoutMediator(binding.tabActivityMain,
-        binding.viewPagerActivityMain,
-        object : TabLayoutMediator.TabConfigurationStrategy{
-            override fun onConfigureTab(tab: TabLayout.Tab, position: Int) {
-                when(position){
+            binding.viewPagerActivityMain,
+            object : TabLayoutMediator.TabConfigurationStrategy{
+                override fun onConfigureTab(tab: TabLayout.Tab, position: Int) {
+                    when(position){
 
-                    0->{tab.text="خانه"
-                    tab.icon=getDrawable(R.drawable.ic_green_home)}
+                        0->{tab.text="خانه"
+                            tab.icon=getDrawable(R.drawable.ic_green_home)}
 
-                    1->{tab.text="۱۰۲۸۰ امتیاز"
-                    tab.icon=getDrawable(R.drawable.ic_club)}
+                        1->{tab.text="۱۰۲۸۰ امتیاز"
+                            tab.icon=getDrawable(R.drawable.ic_club)}
 
-                    2->{tab.text="تخفیف‌ها"
-                        tab.icon=getDrawable(R.drawable.ic_green_voucher)
+                        2->{tab.text="تخفیف‌ها"
+                            tab.icon=getDrawable(R.drawable.ic_green_voucher)
+                        }
                     }
-                }
 
-            }
-        })
+                }
+            })
         tapMediator.attach()
 
-        binding.viewPagerActivityMain.isUserInputEnabled=false
     }
 }
 
