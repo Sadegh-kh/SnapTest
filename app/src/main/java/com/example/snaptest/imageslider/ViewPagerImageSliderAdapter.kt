@@ -11,7 +11,7 @@ import com.example.snaptest.R
 import java.util.*
 import kotlin.collections.ArrayList
 
-class ViewPagerAdapter(private val context: Context , private val imageList: ArrayList<Int>):PagerAdapter() {
+class ViewPagerImageSliderAdapter(private val context: Context, private val imageList: ArrayList<Int>):PagerAdapter() {
     override fun getCount(): Int {
         return imageList.size
     }
