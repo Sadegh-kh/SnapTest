@@ -37,4 +37,5 @@ class ViewPagerImageSliderAdapter(private val context: Context, private val imag
     override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
         container.removeView(`object` as ConstraintLayout)
     }
+
 }

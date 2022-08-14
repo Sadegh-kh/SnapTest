@@ -2,7 +2,9 @@ package com.example.snaptest.activityMain
 
 
 import android.os.Bundle
+import android.view.MotionEvent
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.MotionEventCompat
 import androidx.viewpager2.widget.ViewPager2
 import com.example.snaptest.R
 import com.example.snaptest.databinding.ActivityMainBinding
@@ -18,7 +20,6 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.viewPagerActivityMain.adapter=ViewpagerFragmentsAdapter(this)
-        binding.viewPagerActivityMain.orientation=ViewPager2.ORIENTATION_HORIZONTAL
         binding.viewPagerActivityMain.offscreenPageLimit=1
 
         val tapMediator= TabLayoutMediator(binding.tabActivityMain,
@@ -41,5 +42,8 @@ class MainActivity : AppCompatActivity() {
             }
         })
         tapMediator.attach()
+
+        binding.viewPagerActivityMain.isUserInputEnabled=false
     }
 }
+

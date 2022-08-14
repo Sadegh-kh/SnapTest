@@ -31,9 +31,5 @@ class FragmentHome:Fragment() {
             R.drawable.img_slider6,
         )
         binding.viewPagerImageSlider.adapter=ViewPagerImageSliderAdapter(requireContext(),imageList)
-        binding.viewPagerImageSlider.setOnTouchListener { view, motionEvent ->
-            view.requestFocus()
-            true
-        }
     }
 }
